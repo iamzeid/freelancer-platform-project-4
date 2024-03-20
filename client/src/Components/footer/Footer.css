@@ -1,0 +1,31 @@
+.footer{
+  border-radius: 0px 100px  0px 0px;
+  background-color:#222222;
+}
+
+
+.footer p{
+  color: white !important;
+  opacity: .6;
+  font-size: small;
+}
+.footer p:hover{
+  opacity: 1;
+}
+.footer .bg{
+  background-color: rgba(128, 128, 128, 0.16);
+}
+.footer input{
+  outline: none;
+  border-color: transparent !important
+
+
+}
+.input-group
+{ 
+background-color:   #FFFFFF17
+}
+.form-contro {
+  background: transparent !important;
+  font-size: 15px;
+}

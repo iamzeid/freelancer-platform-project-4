@@ -1,0 +1,21 @@
+
+
+hr {
+  width: 90%;
+    height: 0;
+    border: 0.1px solid white !important;
+  }
+  nav{
+    z-index: 99999999999;
+   background-color: #222222;
+  }
+  
+  
+  
+  nav a{
+    color: antiquewhite !important;
+  }
+  
+  nav button{
+    background-color: white !important;
+  }

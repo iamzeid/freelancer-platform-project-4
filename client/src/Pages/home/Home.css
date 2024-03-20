@@ -1,0 +1,423 @@
+.homee{
+ 
+  color: black !important;
+  background-image: url("https://demoapus1.com/freeio-new/wp-content/uploads/2022/10/slider2_bg.png");
+}
+.service .row div {
+  opacity: 0; /* Initially hide all elements */
+  animation: fade-in 1.5s ease-in-out forwards;
+  animation-delay: calc(0.1s *  animator-index); /* Adjust delay based on element order */
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Add a counter class for each element (adjust class names as needed) */
+.service .row .col-md-3:nth-child(1) {
+  animator-index: 0;
+}
+.service .row .col-md-3:nth-child(2) {
+  animator-index: 1;
+}
+.service .row .col-md-3:nth-child(3) {
+  animator-index: 2;
+}
+.service .row .col-md-3:nth-child(4) {
+  animator-index: 3;
+}
+
+ .icon {
+
+  background-color: #1dbf73;
+  transition: all 1s;
+  }
+   .icon:hover {
+      background-color: black;
+      color: white;
+  }
+  .w-40,.h40{
+  width: 60px;
+  height: 60px;
+  }
+ 
+
+
+
+.btn-all a ,.btn-all button{
+  background-color: rgb(224, 240, 224);
+ font-weight: bold;
+  width: 170px;
+  border: none;
+  color: rgb(72, 147, 72);
+  text-decoration: none;
+}
+.btn-all a:hover,.btn-all button:hover{
+  background-color: #30695a; 
+  color: white;
+}
+
+.star{
+ color: rgb(238, 238, 84);
+ 
+}
+
+.review{
+  font-size: small;
+}
+
+.nav-pills .nav-link {
+  color: black;
+
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: black;
+  background-color: white;
+}
+
+
+.ico{
+
+    position: absolute; /* Position the emoji absolutely */
+    top: 10px;  /* Adjust vertical position from top */
+    right: 10px; /* Adjust horizontal position from right */
+    width: 30px; /* Adjust emoji width */
+    height: 30px; /* Adjust emoji height */
+  background-color: white;
+  border-radius: 50%;
+  
+  
+}
+.ico:hover{
+  background-color:rgb(122, 184, 122);
+  color: white;
+}
+
+/* section2 */
+
+.bor{
+    border: 1.5px solid gray !important;
+  }
+  
+  .button-hover:hover{
+    border: 1.5px solid gray !important;
+    color: rgb(66, 133, 66) !important;
+  
+  }
+  .nav-pills .nav-link {
+    color: black;
+    
+  }
+  .button-hover{
+    background-color: white !important;
+   
+  }
+  
+  .nav-pills .nav-link.active,
+  .nav-pills .show>.nav-link {
+    color: black;
+    background-color: white;
+  }
+  .your-div-class {
+    opacity: 0; /* Initially invisible */
+    animation: slideUp ease-in-out 2s forwards;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%); /* Start from 100% below the viewport */
+    }
+    to {
+      transform: translateY(0); /* End at its original position */
+      opacity: 1; /* Become fully visible */
+    }
+  }
+  
+  
+
+  .client-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ul{
+    position: relative;
+  }
+  
+  .elementor-widget-container {
+    position: absolute;
+    top: 30%;
+  
+    background-color:#222222;
+    border-radius: 16px 16px 16px 16px;
+    color: white;
+    width: 370px;
+    text-align: start;
+  }
+  .tick-2 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   
+  }
+  .bttn{
+    width: 35%;
+    background-color:#1dbf73;
+    border: none;
+  }
+  .bttn:hover{
+    background-color:#1F4B3F !important ;
+    color: white;
+  }
+
+  .bg-gray{
+    background-color:rgb(249, 245, 245);
+    height: 500px;
+  
+  }
+
+  .bg-gray .text-start {
+   
+    background-color: #f0f0f0;
+  }
+  
+  
+  .container {
+    max-width: 1140px; /* Set a maximum width for larger screens */
+    margin: 0 auto; /* Center container horizontally */
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+  }
+  
+  h2 {
+    font-size: 24px; /* Adjust font size as needed */
+  }
+  
+  p {
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.5; /* Improve readability */
+  }
+  
+  .col-md-3 {
+    flex: 0 0 33.33%; /* Set initial width for columns (3 columns) */
+    padding: 15px; /* Adjust padding as needed */
+    text-align: center; /* Center content initially */
+  }
+  
+  /* Media Queries */
+  
+  /* Large screens (desktops) */
+  @media (min-width: 992px) {
+    /* No specific changes needed for large screens at this point */
+  }
+  
+  /* Medium screens (tablets) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-3 {
+      flex: 0 0 50%; /* Adjust width for 2 columns on medium screens */
+    }
+  }
+  
+  /* Small screens (phones) */
+  @media (max-width: 499px) {
+    .col-md-3 {
+      flex: 0 0 100%; /* Make columns stack on top of each other on small screens */
+    }
+  
+    h2 {
+      font-size: 20px; /* Adjust font size for better readability */
+    }
+  
+    p {
+      font-size: 14px; /* Adjust font size for better readability */
+    }
+  }
+.need{
+  border-radius: 100px 0px 0px 0px ;
+}
+
+
+.ul img {
+  opacity: 0; /* Initially hide the image */
+  animation: image-fade-in 1.5s ease-in-out forwards;
+}
+
+/* Animation definition for fading in the image */
+@keyframes image-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.client-content {
+  opacity: 0; /* Initially hide the content */
+  animation: fade-in 1.5s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.gallery-image {
+  opacity: .9;
+  transition: transform 0.5s ease-in-out; /* Smooth transition on hover */
+  
+}
+
+.gallery-image:hover {
+  transform: scale(1.1); /* Scale image to 110% on hover */
+}
+
+.image-container {
+  position: relative; /* Enable relative positioning for child elements */
+}
+
+.image-content {
+  position: absolute; /* Make the content element absolute relative to its container */
+top: 50px; /* Position the content at the bottom (adjust as needed) */
+  left: 10px; /* Position the content on the right (adjust as needed) */
+   /* Semi-transparent black background */
+  color: white; /* White text color */
+  padding: 5px; /* Add padding around the content */
+  font-family: Arial, sans-serif; /* Set desired font */
+ 
+}
+
+.Testimonials .w-20,.h-20{
+  width: 120px;
+  height: 120px;
+}
+.Testimonials {
+  background-color: var(--main-color);
+}
+
+.carousel-indicators [data-bs-target] {
+border-radius: 50%;
+  background-color:black !important;
+  width: 8px !important;
+  height: 8px !important;
+
+}
+
+.Testimonials .small{
+  font-size: small;
+  margin-bottom: 0px;
+}
+.Testimonials .btn1{
+  border: none;
+  background-color: rgba(234, 179, 187, 0.69);
+  font-size: small;
+}
+.Testimonials .view{
+  border: none;
+  background-color: #f0f0f0;
+  color: rgb(101, 165, 101);
+  font-weight: bold;
+}
+.card-footer{
+  background-color: white !important;
+}
+.Testimonials .card:hover .view {
+  background-color:rgb(74, 131, 74);
+  color: white !important;
+ 
+}
+
+
+h2{
+  font-size: 40px;
+}
+
+.width-image{
+  width: 50px;
+}
+.plan .view{
+  border: none;
+  background-color: #f0f0f0;
+  color: rgb(101, 165, 101);
+  font-weight: bold;
+}
+.plan p{
+font-size: small;
+}
+.plan .hov:hover .view{
+  background-color:rgb(74, 131, 74);
+  color: white;
+}
+
+@media (min-width: 399px) {
+  .bg-gray{
+   height: 100%;
+  }
+
+}
+
+.background{
+  background: #FFEDE8 url("https://demoapus1.com/freeio-new/wp-content/uploads/2022/10/slider2_bg.png") no-repeat center center / auto;
+}
+.profile-container .btn1{
+  border: none;
+  background-color: pink;
+  font-size: small;
+  width: 20%;
+}
+
+
+
+
+
+
+.profile{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+.profile{
+  background-image: url(https://demoapus1.com/freeio-new/wp-content/uploads/2022/09/bg-filter1.jpg);
+  background-position: center;
+  
+  background-size: cover;
+  height: auto;
+
+}
+.gig-list .view{
+  border: none;
+  background-color: #f0f0f0;
+  color: rgb(101, 165, 101);
+  font-weight: bold;
+}
+
+.gig-list .view:hover  {
+  background-color:rgb(74, 131, 74);
+  color: white !important;
+ 
+}
+
+
+.accordion-header button{
+  background-color:rgb(245, 229, 239);
+}
+.need{
+  background-color:rgb(245, 229, 239);
+}

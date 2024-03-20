@@ -1,0 +1,163 @@
+.bg-gray .text-start {
+  padding-top: 50px; /* Adjust padding as needed */
+  background-color: #f0f0f0;
+}
+.home-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.search {
+  background-color: rgb(245, 229, 239);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+
+  .searchInput {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    img {
+      width: 20px;
+      height: 20px;
+      margin: 10px;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      background-color: transparent;   
+      &::placeholder {
+        color: gray;
+      }
+    }
+  }
+
+  button {
+    width: 120px;
+    height: 50px;
+    border: none;
+    background-color: #1dbf73;
+    color: white;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+}
+
+.popular {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  span {
+    width: max-content;
+  }
+
+  button {
+    width: max-content;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 14px;
+  }
+}
+
+.container {
+  max-width: 1140px; /* Set a maximum width for larger screens */
+  margin: 0 auto; /* Center container horizontally */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+h2 {
+  font-size: 24px; /* Adjust font size as needed */
+}
+
+p {
+  font-size: 16px; /* Adjust font size as needed */
+  line-height: 1.5; /* Improve readability */
+}
+
+.col-md-3 {
+  flex: 0 0 33.33%; /* Set initial width for columns (3 columns) */
+  padding: 15px; /* Adjust padding as needed */
+  text-align: center; /* Center content initially */
+}
+
+/* Media Queries */
+
+/* Large screens (desktops) */
+@media (min-width: 992px) {
+  /* No specific changes needed for large screens at this point */
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-3 {
+    flex: 0 0 50%; /* Adjust width for 2 columns on medium screens */
+  }
+}
+
+/* Small screens (phones) */
+@media (min-width: 476px) and(max-width:767){
+  .col-md-3 {
+    flex: 0 0 100%; /* Make columns stack on top of each other on small screens */
+  }
+
+
+  h2 {
+    font-size: 20px; /* Adjust font size for better readability */
+  }
+
+  p {
+    font-size: 14px; /* Adjust font size for better readability */
+  }
+  
+ 
+}
+.home-content h1 span,
+.home-content p ,h1,.search{
+  opacity: 0;
+  transform: translateY(20px); /* Adjust vertical offset as needed */
+  animation: contentShow 2s ease-in-out forwards;
+}
+
+
+
+@keyframes contentShow {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-image {
+  opacity: 0;  /* Initially hide the image */
+  animation: scale-up 1s ease-in-out forwards;
+}
+
+@keyframes scale-up {
+  from {
+    transform: scale(0.5); /* Start small at 25% size */
+    opacity: 0;
+  }
+  to {
+    transform: scale(1); /* Animate to full size */
+    opacity: 1;
+  }
+}
+
+
